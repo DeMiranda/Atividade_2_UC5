@@ -26,10 +26,12 @@ public class Wall : MonoBehaviour
         if (this.gameObject.tag == "quad")
         {
 
-
+            
             GameObject myPlayer = GameObject.FindWithTag("Player");
             myPlayer.GetComponent<Player>().qtdMuros++;
             Destroy(this.gameObject);
+            // Código CORRETO para controle de versão Atividade 2 
+
 
 
         }
