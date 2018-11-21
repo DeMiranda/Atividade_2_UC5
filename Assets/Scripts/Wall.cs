@@ -25,16 +25,14 @@ public class Wall : MonoBehaviour
     {
         if (this.gameObject.tag == "quad")
         {
-           
-            
-            GameObject meuPlayer = GameObject.FindWithTag("Player");
-            meuPlayer.GetComponent<Player>().qtdMuros++;
+
+
+            GameObject myPlayer = GameObject.FindWithTag("Player");
+            myPlayer.GetComponent<Player>().qtdMuros++;
             Destroy(this.gameObject);
 
 
         }
     }
-
-   
 }
  
